@@ -13,10 +13,10 @@
       <h4>The most advanced customer support tools with a simple and affordable pricing. And you can always try for 30 days, free!</h4>
     </div>
     <div class="container-card">
-      <div class="card" onclick="showHideCard()">
+      <div class="card">
+        <input type="checkbox" />
         <div class="card-title">
           <h3>BASIC</h3>
-          <div class="checkbox" style="display: none"><img src="checkbox-icon.png" alt="" /></div>
         </div>
         <div class="price">
           <div class="dollar"><h1>$</h1></div>
@@ -35,11 +35,11 @@
           <button class="btn-primary" onclick="on()">BUY NOW</button>
         </div>
       </div>
-      <div class="card" onclick="showHideCard()">
+      <div class="card">
+        <input type="checkbox" />
         <div class="card-title">
           <h3>STANDARD</h3>
           <p>save 15%</p>
-          <div class="checkbox" style="display: none"><img src="checkbox-icon.png" alt="" /></div>
         </div>
         <div class="price">
           <div class="dollar"><h1>$</h1></div>
@@ -58,10 +58,10 @@
           <button class="btn-primary" onclick="on()">BUY NOW</button>
         </div>
       </div>
-      <div class="card" onclick="showHideCard()">
+      <div class="card">
+        <input type="checkbox" />
         <div class="card-title">
           <h3>ADVANCED</h3>
-          <div class="checkbox" style="display: none" ;><img src="checkbox-icon.png" alt="" /></div>
         </div>
 
         <div class="price">
@@ -103,17 +103,6 @@
   <script>
     function on() {
       document.getElementsByClassName("btn-primary").innerHTML = alert("Success");
-    }
-    let checkbox = document.querySelector(".checkbox");
-    let isShow = true;
-    function showHideCard() {
-      if (isShow) {
-        checkbox.style.display = "none";
-        isShow = false;
-      } else {
-        checkbox.style.display = "block";
-        isShow = true;
-      }
     }
   </script>
 </html>
