@@ -452,6 +452,7 @@ hr {
     z-index: 3;
   }
   .container-article .article {
+    margin: 0;
     width: 100%;
     height: auto;
     color: rgb(78, 78, 78);
