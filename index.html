@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ZettaCamp</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Pricing!</h1>
+      <h4>The most advanced customer support tools with a simple and affordable pricing. And you can always try for 30 days, free!</h4>
+    </div>
+    <div class="container-card">
+      <div class="card" onclick="showHideCard()">
+        <div class="card-title">
+          <h3>BASIC</h3>
+          <div class="checkbox" style="display: none"><img src="checkbox-icon.png" alt="" /></div>
+        </div>
+        <div class="price">
+          <div class="dollar"><h1>$</h1></div>
+          <div class="text"><h1>4</h1></div>
+          <div class="month"><p>/month</p></div>
+        </div>
+        <hr />
+        <div class="list-items">
+          <ul>
+            <li><strong>10</strong> Projects</li>
+            <li><strong>10</strong> Pages</li>
+            <li><strong>100</strong> mb Disk Spaces</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button class="btn-primary" onclick="on()">BUY NOW</button>
+        </div>
+      </div>
+      <div class="card" onclick="showHideCard()">
+        <div class="card-title">
+          <h3>STANDARD</h3>
+          <p>save 15%</p>
+          <div class="checkbox" style="display: none"><img src="checkbox-icon.png" alt="" /></div>
+        </div>
+        <div class="price">
+          <div class="dollar"><h1>$</h1></div>
+          <div class="text"><h1>8</h1></div>
+          <div class="month"><p>/month</p></div>
+        </div>
+        <hr />
+        <div class="list-items">
+          <ul>
+            <li><strong>20</strong> Projects</li>
+            <li><strong>20</strong> Pages</li>
+            <li><strong>200</strong> mb Disk Spaces</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button class="btn-primary" onclick="on()">BUY NOW</button>
+        </div>
+      </div>
+      <div class="card" onclick="showHideCard()">
+        <div class="card-title">
+          <h3>ADVANCED</h3>
+          <div class="checkbox" style="display: none" ;><img src="checkbox-icon.png" alt="" /></div>
+        </div>
+
+        <div class="price">
+          <div class="dollar"><h1>$</h1></div>
+          <div class="text"><h1>12</h1></div>
+          <div class="month"><p>/month</p></div>
+        </div>
+        <hr />
+        <div class="list-items">
+          <ul>
+            <li><strong>40</strong> Projects</li>
+            <li><strong>40</strong> Pages</li>
+            <li><strong>500</strong> Mb Disk Spaces</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button class="btn-primary" onclick="on()">BUY NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="title"><h1>Frequently Ask Questions</h1></div>
+    </div>
+    <div class="container-article">
+      <div class="article">
+        <h3>How does trial work?</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut aliquam voluptatem esse ipsa, est nulla vitae repudiandae perspiciatis id fugiat, laudantium numquam? Inventore excepturi iste expedita ab adipisci cumque.
+        </p>
+      </div>
+      <div class="article">
+        <h3>Can I cancel any time?</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut aliquam voluptatem esse ipsa, est nulla vitae repudiandae perspiciatis id fugiat, laudantium numquam? Inventore excepturi iste expedita ab adipisci cumque.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    function on() {
+      document.getElementsByClassName("btn-primary").innerHTML = alert("Success");
+    }
+    let checkbox = document.querySelector(".checkbox");
+    let isShow = true;
+    function showHideCard() {
+      if (isShow) {
+        checkbox.style.display = "none";
+        isShow = false;
+      } else {
+        checkbox.style.display = "block";
+        isShow = true;
+      }
+    }
+  </script>
+</html>
