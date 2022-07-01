@@ -325,7 +325,7 @@ hr {
     margin: 20px;
   }
   .container-card {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
